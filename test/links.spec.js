@@ -1,5 +1,5 @@
 
-const {extractLink,linkValidate}= require('../src/links.js');
+const {extractLink,linkValidate,filesLinkMd}= require('../src/links.js');
 const path = require('path');
 const process = require('process');
 
@@ -72,7 +72,11 @@ const dataDirectory=[
     }
   ]
 
-
+const arraylinks=[
+  'D:\\PROGRAMACION\\LIM015-md-links\\test\\pruebasTest\\carpeta1\\carpeta1.md',
+  'D:\\PROGRAMACION\\LIM015-md-links\\test\\pruebasTest\\carpeta2\\carpeta2.md',
+  'D:\\PROGRAMACION\\LIM015-md-links\\test\\pruebasTest\\general.md'
+]
 
 
   describe('extractLink', () => {
@@ -92,10 +96,11 @@ const dataDirectory=[
     linkValidate(objectData).then(result=>{
         expect(result).toEqual(dataValidate)
     })
+  })
+    it('debería retornar todos los paths dentro de una parte ', () => {
+      expect(filesLinkMd(`${process.cwd()}\\test`)).toEqual(arraylinks)
+    });
 })
-});
-
-
 
 
 

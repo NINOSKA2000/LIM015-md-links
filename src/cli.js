@@ -42,7 +42,6 @@ mdlinks(path,options).then(result=>console.log(result)).catch(error=>console.log
 
 //mdlinks("pruebas\\general2.md").then(result=>console.log({result}));
 
-
 //mdlinks("D:\\PROGRAMACION\\LIM015-md-links\\pruebas",{ validate: true }).then(result=>console.log(result)).catch(error=>console.log(error));
 
 //mdlinks("D:\\PROGRAMACION\\LIM015-md-links\\pruebas",{ stats: true }).then(result=>console.log(result)).catch(error=>console.log(error));
