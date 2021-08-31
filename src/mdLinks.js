@@ -5,7 +5,7 @@ const  {brokenlinks,totalUniquelinks}= require('./stat.js');
 
 //const filesLinkMd = require('./links.js');
 const path = require('path');
-const { log } = require('console');
+//const { log } = require('console');
 
 
 //evaluar que tipo de ruta es 

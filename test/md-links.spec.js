@@ -62,6 +62,7 @@ const ouputvalidate=[
 
 
 const valueBroken= { Total: 4, Unique: 4, broken: 0 };
+
 const valueStats={ Total: 4, Unique: 4 };
 
 

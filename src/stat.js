@@ -2,7 +2,6 @@
 
 const  {extractLink, linkValidate}= require('./links.js');
 
-
 const totalUniquelinks=(pathAbs)=>{
     const objectData=extractLink(pathAbs);
         const totalLinks=objectData.length;    

@@ -1,7 +1,5 @@
 const  path = require('path');
 const fs = require('fs');
-const { rejects } = require('assert');
-const { resolve } = require('dns');
 const fetch = require('node-fetch')
 
 
